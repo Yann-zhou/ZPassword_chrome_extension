@@ -1,0 +1,1 @@
+This chrome Extension project was created for ZPassword server.
