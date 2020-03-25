@@ -1,0 +1,70 @@
+body {
+	height: 400px;
+	width: 300px;
+	position:relative;
+}
+
+.navbar-btn {
+	margin-right: 3px;
+	float: right;
+}
+
+.alert {
+	display: none;
+    position: absolute;
+    width: 260px;
+    top: 310px;
+    left: 20px;
+}
+
+.form-signin {
+	width: 260px;
+    position:absolute;
+    left:50%;    /* 定位父级的50% */
+    top:50%;
+    transform: translate(-50%,-50%); /*自己的50% */
+}
+
+.form-signin-heading {
+	text-align:center;
+}
+
+#inputEmail {
+	margin-bottom: 5px;
+}
+
+#inputPassword {
+	margin-bottom: 10px;
+}
+
+#form-setting {
+	display:none;
+}
+
+#inputIP {
+	margin-bottom: 5px;
+}
+
+#inputPort {
+	margin-bottom: 5px;
+}
+
+#inputPrivateKey {
+	margin-bottom: 10px;
+}
+
+#form-signup {
+	display: none;
+}
+
+#signupUserame {
+	margin-bottom: 5px;
+}
+
+#signupPassword {
+	margin-bottom: 5px;
+}
+
+#signupRePassword {
+	margin-bottom: 10px;
+}

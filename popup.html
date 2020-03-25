@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>模拟登陆实例</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <p class="navbar-brand">ZPassword</p>
+            <button type="button" class="btn btn-info navbar-btn" id="signup">注册</button>
+            <button type="button" class="btn btn-info navbar-btn" id="signin" style="display: none;">登录</button>
+            <button type="button" class="btn btn-default navbar-btn" id="setting">设置</button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    </div><!-- /.container-fluid -->
+</nav>
+
+<form class="form-signin" id="form-signin">
+    <h4 class="form-signin-heading">验证登录信息</h4>
+    <input type="email" id="inputEmail" class="form-control" placeholder="邮箱地址" required="" autofocus="">
+    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="signin-button">登录</button>
+</form>
+
+<form class="form-signin" id="form-setting">
+    <h4 class="form-signin-heading">更改服务器设置</h4>
+    <input type="text" id="inputIP" class="form-control" placeholder="服务器IP地址" required="" autofocus="">
+    <input type="text" id="inputPort" class="form-control" placeholder="端口号" required="">
+    <input type="text" id="inputPrivateKey" class="form-control" placeholder="RSA私钥" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="save-setting">保存</button>
+</form>
+
+<form class="form-signin" id="form-signup">
+    <h4 class="form-signin-heading">用户注册</h4>
+    <input type="text" id="signupUserame" class="form-control" placeholder="邮箱账号" required="" autofocus="">
+    <input type="password" id="signupPassword" class="form-control" placeholder="密码" required="">
+    <input type="password" id="signupRePassword" class="form-control" placeholder="重复密码" required="">
+    <button class="btn btn-lg btn-primary btn-block" type="button" id="signup-button">注册</button>
+</form>
+
+<div class="alert alert-danger" role="alert" id="passwordNotSame">两次密码输入不一致！</div>
+<div class="alert alert-success" role="alert" id="settingSaved">设置已保存！</div>
+</body>
+</html>
